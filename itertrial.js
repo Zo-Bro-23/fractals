@@ -1,4 +1,4 @@
-let ITERATIONS = 2;
+let ITERATIONS = 0;
 let z = 1;
 const maps = [
   {
@@ -94,6 +94,7 @@ const draw = () => {
     }
   }
 
+  n = 0;
   m = fractal(z);
   m.forEach((p) => {
     const px = rpt(p, [WIDTH, HEIGHT]);
